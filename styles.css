@@ -1,0 +1,55 @@
+
+/*body{
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 0.85rem;
+    margin:0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    display: grid;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    
+
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.nav-btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-left: 3rem;
+    margin-right: 1rem;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
