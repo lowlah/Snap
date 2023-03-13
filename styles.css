@@ -14,6 +14,8 @@
 
 body{
     background-color: hsl(0, 0%, 98%);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .logo{
@@ -111,8 +113,8 @@ nav{
     
     
     padding-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /*margin-left: 1rem;
+    margin-right: 1rem;*/
     
 
 }
@@ -162,9 +164,143 @@ nav{
     display: none;
     margin-right: 1.5rem;
   }
+/*.main-section{
+
+  display: grid;
+  
+  grid-template-areas:
+   "topic" "logo"
+   "para" "logo"
+   "button" "logo"
+   "small" "logo";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+h3{
+  grid-area: topic;
+}
+
+.desktop{
+  grid-area: logo;
+  width: 30%;
+} 
+
+p{
+  grid-area: para;
+}
+
+button{
+  grid-area: button;
+}
+
+
+.main-logos{
+  display: flex;
+  grid-area: small;
+  
+}
+
+.main-section {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "heading heading"
+    "paragraph paragraph"
+    "logos button"
+    "image image";
+}
+
+h3 {
+  grid-area: heading;
+  font-size: 3.5rem;
+}
+
+p {
+  grid-area: paragraph;
+}
+
+button {
+  grid-area: button;
+}
+
+.main-logos {
+  grid-area: logos;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop {
+  grid-area: image;
+  justify-self: end;
+}
+
+
+.logo-main{
+  width: 150px;
+}*/
+
+.main-section {
+  display: grid;
+  grid-template-areas:
+    "heading image"
+    "text image"
+    "button image"
+    "logos image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  margin-top: 5rem;
+  
+}
+
+h3 {
+  grid-area: heading;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+p {
+  grid-area: text;
+  font-size: 18px;
+}
+
+button {
+  grid-area: button;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  justify-self: start;
+}
+
+.desktop {
+  grid-area: image;
+  justify-self: end;
+  width: 50%;
+}
+
+.main-logos {
+  grid-area: logos;
+  display: flex;
+  align-items: center;
+}
+
+.logo-main {
+  
+  width: 150px;
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin-top: 4rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
