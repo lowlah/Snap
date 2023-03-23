@@ -177,9 +177,12 @@ img{
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap:  nowrap;
   margin-top: 3rem;
   margin-left: 8rem;
+  /*max-width: 1200px;*/
+  
+  
   
   
 
@@ -190,15 +193,17 @@ img{
 .content{
   display: flex;
   flex-direction: column;
+  /*flex: 1 1 35rem;*/
   gap: 30px;
+  
 }
 
 
 h3 {
   font-size: 48px;
   font-weight: bold;
-  margin-top: 5rem;
-  width: 80%;
+  margin-top: 9rem;
+  width: 70%;
 }
 
 p {
@@ -234,7 +239,7 @@ p {
   /*width: 100%;*/
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 4rem;
+  margin-top: 2rem;
   
   
   
@@ -253,9 +258,9 @@ p {
   
   
 }
-.container{
-  display:none;
-}
+/*.section-image{
+  flex: 1 1 35rem;
+}*/
 
 .mobile{
   display: none;
