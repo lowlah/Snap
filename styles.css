@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
     font-size: 0.85rem;
+    /*font-size: 16px;*/
     margin:0;
     padding: 0;
     /*overflow-x: 0;*/
@@ -171,6 +172,7 @@ nav{
 
 img{
   max-width: 100%;
+  display: block;
 }  
 
 .main-section {
