@@ -25,7 +25,7 @@ body{
 .logo{
   
 
-  height: 30px;
+  height: 25px;
   
 }
 
@@ -36,11 +36,14 @@ li{
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
-a:link{
+/*a:link,a:visited{
   color:black;
-}
+}*/
+
+
 
 .navbar li{
     padding-right: 2rem;
@@ -50,15 +53,22 @@ a:link{
 }
 
  a{
-    padding:10px;
-    white-space: no-wrap;  
+    
+    /*white-space: no-wrap;  */
 }
 
 .logo-section{
   display: flex;
-  
   align-items: center;
-  flex-wrap: nowrap;
+  height: 70px;
+  
+  padding-top: 2rem;
+  
+}
+
+.nav-link{
+  color:#000;
+  
 }
 
 .nav-links:hover {
@@ -90,13 +100,19 @@ a:link{
 nav li:hover > ul {
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 135px;
 
     
 }
   
 .nav-links:hover .arrow{
     transform: rotate(180deg);
+}
+
+.sub-item{
+  /*padding-right: 10px;*/
+  color: #000;
+  
 }
   
   
@@ -105,54 +121,57 @@ nav li:hover > ul {
 
 }
 
-
-
-nav{
+.nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    
-    
-    
-    padding-top: 2rem;
-    /*margin-left: 1rem;
-    margin-right: 1rem;*/
-    
-
+    flex-grow: 1;
 }
 
 .navbar{
     display:flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-left: 5rem;
     align-items: center;
+    flex-grow: 1;
+    background:lawngreen ;
+    
+    
+    
+
+   /* padding: auto;*/
     
     
 
     
 }
 
-.nav-btns{
+/*.nav-btns{
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding-left: 3rem;
     margin-right: 1rem;
     align-items: center;
-}
+}*/
 
-.nav-btns li:nth-child(2){
+.nav-link:nth-of-type(6){
     border: 1px solid black;
     padding: 0.4rem 0.8rem;
     border-radius: 10px;
+    /*margin-left: 3rem;*/
+}
+
+.nav-link:nth-of-type(5){
+  margin-left: auto;
 }
 
 .dropdown a{
     color: black;
 }
 
+.list-item{
+  margin-left: 1rem;
+  
+}
 
 .bar {
     display: block;
@@ -167,12 +186,13 @@ nav{
 .hamburger{
     display: none;
     margin-right: 1.5rem;
+    
   }
 
 
 img{
   max-width: 100%;
-  display: block;
+  
 }  
 
 .main-section {
@@ -339,31 +359,64 @@ button {
 
 
 @media (max-width:768px){
+
+
+
+  /*body{
+    background-color: rgba(0,0,0,0.2);
+  }
+*/
   
-    .navbar {
-      position: fixed;
-      right: -100%;
-      top: 70px;
-      flex-direction: column;
-      
+
+  .logo-section{
+    justify-content: space-between;
+    display: flex;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;*/
     
-      
-      color:black;
-      width: 35%;
-      z-index: 000;
-      
-      text-align: center;
-      transition: 0.3s;
-      padding: 0;
-      height: 100%;
-      opacity: 0;
-      
-      
-    }
+  }
+
+  .nav{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+
+  .navbar {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+  
+    flex-grow: 0;
+  
+    
+    color:black;
+    width: 30%;
+    z-index: 000;
+    padding-top: 1rem;
+    
+    /*text-align: center;*/
+    transition: 0.3s;
+    padding-left: 2rem;
+    height: 100%;
+    opacity: 0;
+    background-color: green;
+    
+    
+  }
   
     .hamburger{
       display: block;
       margin-right: 1.5rem;
+      
     }
     /*
     .nav-link{
@@ -395,8 +448,9 @@ button {
   }
 
   .dropdown{
-    position:absolute;
-    top: 40px;
+    /*position:absolute;
+    top: 40px;*/
+    display: none;
 
 
   }
@@ -440,7 +494,7 @@ button {
   
   
   
-  .hamburger.active .bar:nth-child(1) {
+.hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
   
@@ -452,9 +506,18 @@ button {
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  .nav-btns{
-    display: none;
+  .nav-link:nth-of-type(6){
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    
   }
+
+  .nav-btns{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   
   .navbar li {
     margin-bottom: 20px;
