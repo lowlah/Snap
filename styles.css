@@ -1,78 +1,69 @@
-
-/*body{
-    font-family: 'Epilogue', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}*/
-
 *{
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
-
-    
     font-size: 0.85rem;
     margin:0;
     padding: 0;
-    /*overflow-x: 0;*/
 }
 
 body{
     background-color: hsl(0, 0%, 98%);
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 0.85rem;
-    /*overflow-x: hidden;*/
-    
-}
-
-.logo{
-  
-
-  height: 25px;
-  
+    font-size: 0.85rem; 
 }
 
 li{
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 a{
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
-/*a:link,a:visited{
-  color:black;
-}*/
+img{
+  max-width: 100%; 
+}  
 
-
-
-.navbar li{
-    padding-right: 2rem;
-    position:relative;
-
-    
-}
-
- 
+/* Styles the navigation menu */
 
 .logo-section{
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 70px;
-  
   padding-top: 2rem;
-  
+}
+
+.logo{
+  height: 25px;
+}
+
+.nav{
+  display: flex;
+  flex-grow: 1;
+}
+
+.navbar{
+  display:flex;
+  margin-left: 5rem;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar li{
+    padding-right: 2rem;
+    position:relative;  
 }
 
 .nav-link{
-  color:#000;
-  
+  color:#000; 
 }
 
 .nav-links:hover {
-    cursor:pointer;
-    
+    cursor:pointer;   
 }
 
 .dropdown{
@@ -86,22 +77,22 @@ a{
     border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*margin-top: 1rem;*/
     z-index: 1;
 }
 
-/*.dropdown li{
-    margin-bottom: 10px;
-}*/
-
-
-
-nav li:hover > ul {
+.dropdown a{
+  color: black;
+}
+/*nav li:hover > ul {
     display: flex;
     flex-direction: column;
-    width: 135px;
+    width: 135px;   
+}*/
 
-    
+.nav-link:hover .dropdown{
+  display: flex;
+  flex-direction: column;
+  width: 135px;   
 }
   
 .nav-links:hover .arrow{
@@ -109,31 +100,12 @@ nav li:hover > ul {
 }
 
 .sub-item{
-  /*padding-right: 10px;*/
   color: #000;
   margin-bottom: 10px;
-  
 }
-  
-  
+
 .img-icon{
-    display: inline;
-
-}
-
-.nav{
-    display: flex;
-    flex-grow: 1;
-}
-
-.navbar{
-    display:flex;
-    /*justify-content: space-between;*/
-    margin-left: 5rem;
-    align-items: center;
-    flex-grow: 1;
-    
-
+  display: inline;
 }
 
 .nav-link:nth-of-type(6){
@@ -147,37 +119,32 @@ nav li:hover > ul {
   margin-left: auto;
 }
 
-.dropdown a{
-    color: black;
+.list-item{
+  margin-left: 1rem; 
 }
 
-.list-item{
-  margin-left: 1rem;
-  
-}
+/* Styles the hamburger */
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-  }
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
 
 .hamburger{
-    display: none;
-    margin-right: 1.5rem;
-  }
+  display: none;
+  margin-right: 1.5rem;
+}
 
 .hamburger:last-child {
-    margin-bottom: 0;
-  } 
+  margin-bottom: 0;
+} 
 
-img{
-  max-width: 100%; 
-}  
+/* Styles the main section */
 
 .main-section {
   display: grid;
@@ -190,8 +157,7 @@ img{
   grid-template-rows: auto auto auto auto;
   gap: 20px;
   margin-top: 5rem;
-  margin-left: 12rem;
-  
+  margin-left: 12rem; 
 }
 
 h3 {
@@ -214,13 +180,18 @@ button {
   background-color: #000;
   color: #ffffff;
   font-weight: bold;
-  padding: 9px 16px;
+  padding: 12px 18px;
   border: none;
   width:150px;
-  border-radius: 20px;
-  font-size: 18px;
-  
-  
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #FFF;
+  color: black;
+  border: 2px solid black;
 }
 
 .desktop {
@@ -234,10 +205,8 @@ button {
   /*width: 100%;*/
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 5rem;
-  
+  margin-top: 5rem; 
 }
-
 
 .logo-main {
   width: 20rem;
@@ -259,7 +228,7 @@ button {
     color: hsl(228, 45%, 44%);
 }
 
-/* Styles for media queries for responsive design*/
+/* Styling  media queries for responsive design */
 
 @media (max-width: 1200px) {
   .main-section {
@@ -267,19 +236,15 @@ button {
   }
 }
 
-
 @media  (max-width: 992px) {
   .main-section{
     margin-left: 4rem;
   }
 }
 
-
- /*Styles for screens between 600px and 1200px wide */
+ /* Styles for screens between 600px and 1200px wide */
  
 @media (min-width: 769px) and (max-width: 900px) {
-
-  
   .main-section{
     margin-left:1.5rem;
   }
@@ -339,7 +304,6 @@ button {
   }
     
   .active {
-    
     display: block;
     right: 0;
     cursor: pointer;
