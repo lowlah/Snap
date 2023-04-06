@@ -39,6 +39,7 @@ img{
 
 .logo{
   height: 25px;
+  align-items: center;
 }
 
 .nav{
@@ -144,6 +145,10 @@ img{
   margin-bottom: 0;
 } 
 
+/*.hamburger:first-child{
+  margin-top: 5.5rem;
+}*/
+
 /* Styles the main section */
 
 .main-section {
@@ -158,6 +163,7 @@ img{
   gap: 20px;
   margin-top: 5rem;
   margin-left: 12rem; 
+  background-color: hsl(0, 0%, 98%);
 }
 
 h3 {
@@ -266,13 +272,15 @@ button:hover{
 
 @media (max-width:768px){
 
-  body{
+ /* body{
     background-color: rgba(0,0,0,0.2);
-  }
+  }*/
 
   .logo-section{
     justify-content: space-between;
     display: flex;
+    align-items: center;
+    
   }
 
   .nav{
@@ -301,6 +309,7 @@ button:hover{
   .hamburger{
     display: block;
     margin-right: 1.5rem;
+    align-self: baseline;
   }
     
   .active {
