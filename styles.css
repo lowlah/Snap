@@ -339,6 +339,7 @@ i.close{
     /*left: 18rem;
     position: absolute;*/
     justify-content: flex-end;
+    margin-top: 1.4rem;
   }
 
   .hamburger{
