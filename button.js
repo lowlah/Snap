@@ -16,6 +16,8 @@ const navMenu = document.getElementsByClassName('navbar')[0];
 hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("active");
     navMenu.classList.toggle('active');
+    document.querySelector("body").style.backgroundColor = "rgba(0,0,0,0.5)";
+
     
 
 });
@@ -33,6 +35,7 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    document.querySelector('body').style.backgroundColor = '';
 }
 
 /*
