@@ -324,15 +324,21 @@ i.close{
     opacity: 0;
     background-color: #FFF; 
   }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
   
   .close{
-    margin-bottom: 5rem;
-    display: block;
+    padding-bottom: 1rem;
+    display: flex;
     /*position: absolute;
     right: 30px;*/
-    margin-right: 3rem;
+    margin-right: 0rem;
+    /*left: 18rem;
+    position: absolute;*/
     justify-content: flex-end;
-    left: 18rem;
   }
 
   .hamburger{
