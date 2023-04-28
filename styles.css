@@ -439,13 +439,15 @@ i.close{
   }
 
   .main-logos{
-    margin: 0 auto;
+   margin: 0 auto;
+   flex-wrap: wrap;
   }
 
   .logo-main {
-    font-size: 16px;
+    /*font-size: 2rem;*/
     margin-left: 0;
     overflow: hidden;
+    width: 10rem;
   }
 
   .desktop{
