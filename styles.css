@@ -163,7 +163,7 @@ img{
     "logos image";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  gap: 20px;
+  gap: 20px 40px;
   margin-top: 4rem;
   margin-left: 12rem; 
  
@@ -213,19 +213,21 @@ button:hover{
 .desktop {
   grid-area: image;
   width: 25rem;
+  margin-left: 1rem;
 }
 
 .main-logos {
   grid-area: logos;
-  margin-left: -40px;
-  /*width: 100%;*/
+  width: 90%;
   display: flex;
   flex-wrap: nowrap;
   margin-top: 5rem; 
+  /*gap: 30px;*/
+  justify-content: space-between;
 }
 
 .logo-main {
-  width: 20rem;
+  height:20px;
 }
 
 .container{
@@ -257,13 +259,22 @@ i.close{
   }
 }
 
-@media  (max-width: 992px) {
+@media (min-width: 901px) and (max-width: 1008px) {
   .main-section{
     margin-left: 4rem;
   }
+
+  p{
+    width: 20rem;
+  }
+
+  h3{
+    font-size: 42px;
+  }
+
 }
 
- /* Styles for screens between 600px and 1200px wide */
+ /* Styles for screens between 769px and 900px wide */
  
 @media (min-width: 769px) and (max-width: 900px) {
 
@@ -285,13 +296,19 @@ i.close{
   }
 
   p{
-    width: 25rem;
+    width: 20rem;
   } 
 } 
 
 @media (min-width: 901px) and (max-width: 926px){
   .main-logos{
     margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 819px) {
+  .main-logos{
+    margin-top: 3rem;
   }
 }
 
@@ -439,15 +456,16 @@ i.close{
   }
 
   .main-logos{
-   margin: 0 auto;
+   
    flex-wrap: wrap;
+   
   }
 
   .logo-main {
     /*font-size: 2rem;*/
     margin-left: 0;
     overflow: hidden;
-    width: 10rem;
+    
   }
 
   .desktop{
