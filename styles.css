@@ -93,13 +93,20 @@ img{
     width: 135px;   
 }*/
 
-.nav-link:hover .dropdown{
-  display: flex;
+/*.nav-link:hover .dropdown{
+  .nav-link .dropdown.active{
+  /*display: flex;
   flex-direction: column;
+  display: block;
   width: 170px;   
+}*/
+
+.show {
+  display: block;
+  width: 170px;
 }
   
-.nav-links:hover .arrow{
+.arrow.rotate{
     transform: rotate(180deg);
 }
 
@@ -375,7 +382,7 @@ i.close{
   
   .dropdown{
     position: static;
-    display: none;
+    /*display: none;*/
     margin-top: 2rem;
     padding: 0;
     line-height: 15px;
