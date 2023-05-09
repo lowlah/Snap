@@ -27,6 +27,7 @@ navLinks.forEach(navLink => {
 // method 1 for 2 dropdowns not open
 const navLinks = document.querySelectorAll('.nav-link');
 let openDropdown = null;
+
 navLinks.forEach(navLink => {
   navLink.addEventListener('click', () => {
     const dropdown = navLink.querySelector('.dropdown');
@@ -46,12 +47,23 @@ navLinks.forEach(navLink => {
 });
 
 // Close the dropdowns when the user clicks anywhere outside of them
-document.addEventListener('click', (event) => {
+/*document.addEventListener('click', (event) => {
   if (!event.target.closest('.nav-link.features') && !event.target.closest('.nav-link.company')) {
     const featuresDropdown = document.querySelector('.nav-link.features .dropdown');
     const companyDropdown = document.querySelector('.nav-link.company .dropdown');
     featuresDropdown.classList.remove('show');
     companyDropdown.classList.remove('show');
+  }
+});*/
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-link.features') && !event.target.closest('.nav-link.company')) {
+    const featuresDropdown = document.querySelector('.nav-link.features .dropdown');
+    const companyDropdown = document.querySelector('.nav-link.company .dropdown');
+    const arrows = document.querySelectorAll('.arrow'); // select all arrow icons
+    featuresDropdown.classList.remove('show');
+    companyDropdown.classList.remove('show');
+    arrows.forEach(arrow => arrow.classList.remove('rotate')); // remove "rotate" class from all arrow icons
   }
 });
 
