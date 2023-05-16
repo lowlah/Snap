@@ -35,8 +35,11 @@ navLinks.forEach(navLink => {
 
     // Close any open dropdowns
     if (openDropdown && openDropdown !== dropdown) {
-      openDropdown.classList.remove('show');
-      openDropdown.classList.remove('rotate');
+      //openDropdown.classList.remove('show');
+      //openDropdown.classList.remove('rotate');
+      openDropdown.classList.toggle('show', false);
+      openDropdown.classList.toggle('rotate',false);
+
     }
 
     // Open the clicked dropdown
@@ -56,6 +59,7 @@ navLinks.forEach(navLink => {
   }
 });*/
 
+// close dropdowns when the user clicks outside of them
 document.addEventListener('click', (event) => {
   if (!event.target.closest('.nav-link.features') && !event.target.closest('.nav-link.company')) {
     const featuresDropdown = document.querySelector('.nav-link.features .dropdown');
@@ -63,7 +67,9 @@ document.addEventListener('click', (event) => {
     const arrows = document.querySelectorAll('.arrow'); // select all arrow icons
     featuresDropdown.classList.remove('show');
     companyDropdown.classList.remove('show');
-    arrows.forEach(arrow => arrow.classList.remove('rotate')); // remove "rotate" class from all arrow icons
+   // arrows.forEach(arrow => arrow.classList.remove('rotate')); // remove "rotate" class from all arrow icons
+    arrows.forEach(arrow => arrow.classList.toggle('rotate', false));
+
   }
 });
 
